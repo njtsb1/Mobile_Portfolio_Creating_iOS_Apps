@@ -1,0 +1,263 @@
+/* Color Palette Mapping from Native iOS UI */
+:root[data-theme="dark"] {
+    --bg-main: #121212;
+    --bg-surface: #1e1e1e;
+    --text-main: #ffffff;
+    --text-muted: #b0b0b0;
+    --accent-gold: #e5b842;
+    --border-subtle: #2d2d2d;
+    --tab-inactive: #777777;
+}
+
+:root[data-theme="light"] {
+    --bg-main: #f4f4f9;
+    --bg-surface: #ffffff;
+    --text-main: #121212;
+    --text-muted: #555555;
+    --accent-gold: #b58900;
+    --border-subtle: #e0e0e0;
+    --tab-inactive: #888888;
+}
+
+/* Reset & Mobile Viewport Constraints */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 70px; /* Space for the native bottom nav */
+}
+
+/* Simulated Smartphone Shell Behavior for Desktop */
+.top-bar, .bottom-tab-bar, .app-container {
+    width: 100%;
+    max-width: 480px; /* Forces exact mobile look on larger viewports */
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.top-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.top-controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+#lang-selector, #theme-toggle {
+    background: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-subtle);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+/* Main Container Scroll */
+.app-container {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Profile Section */
+.profile-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #555555;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.profile-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.profile-location {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.profile-desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+/* Core Subsections */
+.section-title {
+    color: var(--accent-gold);
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Reusable Dynamic Grid System */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.skill-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 0.75rem 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    aspect-ratio: 1 / 1;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+}
+
+.skill-text {
+    font-size: 0.68rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Horizontal Scroll Layout for Cards */
+.horizontal-scroll {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none; /* Hides scrollbar on Firefox */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none; /* Hides scrollbar on Safari/Chrome */
+}
+
+.info-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 140px;
+    flex: 0 0 auto;
+}
+
+.info-card h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.card-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.card-duration {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+/* Native Bottom Tab Bar Layout */
+.bottom-tab-bar {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-surface);
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    z-index: 10;
+}
+
+.tab-item {
+    background: none;
+    border: none;
+    color: var(--tab-inactive);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+    font-size: 0.65rem;
+    width: 20%;
+}
+
+.tab-item .tab-icon {
+    font-size: 1.2rem;
+}
+
+.tab-item.active {
+    color: var(--accent-gold);
+}
+
+/* Responsive Scaling Rules for Desktop Layouts */
+@media (min-width: 481px) {
+    body {
+        padding-top: 2rem;
+    }
+    .top-bar {
+        border-radius: 12px 12px 0 0;
+        border: 1px solid var(--border-subtle);
+        border-bottom: none;
+    }
+    .app-container {
+        border-left: 1px solid var(--border-subtle);
+        border-right: 1px solid var(--border-subtle);
+        background-color: var(--bg-main);
+    }
+    .bottom-tab-bar {
+        border-radius: 0 0 12px 12px;
+        border: 1px solid var(--border-subtle);
+        position: relative;
+        bottom: auto;
+    }
+}
