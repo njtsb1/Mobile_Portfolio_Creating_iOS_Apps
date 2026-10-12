@@ -1,0 +1,17 @@
+# IDE Caches and Local Preferences
+.vscode/
+.idea/
+*.suo
+*.ntvsvd
+*.njsproj
+*.sln
+*.sw?
+
+# OS Generated Storage Files
+.DS_Store
+Thumbs.db
+
+# Log and Performance Tracking Profiles
+logs
+*.log
+npm-debug.log*
