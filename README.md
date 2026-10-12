@@ -1,15 +1,4 @@
-# Desenvolva Seu Portfólio Mobile Criando Apps iOS
-
-Projeto desenvolvido durante o Bootcamp Santander 2023 - Mobile iOS com Swift, sob a orientação do especialista [Robson Moreira](https://github.com/robixnai "Robson Moreira").</br>
-Neste projeto de Lab, conheceremos na prática o framework da Apple para criação de UI em conjunto com a sua nova estrutura de programação reativa, o Combine. Desenvolveremos três aplicativos intuitivos utilizando essas tecnologias como padrão de projetos MVVM.
-
-Neste desafio, você terá a missão de desenvolver 3 aplicativos no XCode:
-
-1. O primeiro consiste em utilizar o Swift como linguagem de programação, UIkit, Storyboard, XIB e ViewCode, tudo isso utilizando Cocoapods para gerenciar ao menos uma depêndencia e possuir no mínimo três telas;
-2. No segundo projeto, deverá utilizar SwiftUI, Combine e uma depêndencia gerenciada pelo Swift Package Manager(SPM);
-3. Por fim, no terceiro projeto vamos explorar o conceito de modularização, onde voce poderá optar por utilizar o UIkit ou SwiftUI e utilizar o Cocoapods para a criação do módulo, sendo necessário ter no mínimo um módulo bem simples e um App para usar esse módulo.
-
-## Build Your Mobile Portfolio by Creating iOS Apps
+# Build Your Mobile Portfolio by Creating iOS Apps
 
 Project developed during the Santander Bootcamp 2023 - Mobile iOS with Swift, under the guidance of specialist [Robson Moreira](https://github.com/robixnai "Robson Moreira").</br>
 In this lab project, you will gain hands-on experience with Apple's UI framework alongside its new reactive programming framework, Combine. You will develop three intuitive applications using these technologies and the MVVM design pattern.</br>
