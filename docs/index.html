@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivaldo Beirão - Portfólio</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- Top Controller Bar -->
+    <header class="top-bar">
+        <span class="top-title" data-i18n="navTitle">Portfólio</span>
+        <div class="top-controls">
+            <select id="lang-selector" aria-label="Select Language">
+                <option value="en">EN-US</option>
+                <option value="pt">PT-BR</option>
+                <option value="es">ES</option>
+            </select>
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <!-- Profile Header Section -->
+        <section class="profile-header">
+            <div class="avatar-circle">NB</div>
+            <h1 class="profile-name">Nivaldo Beirão</h1>
+            <h2 class="profile-role" data-i18n="profileRole">Administrative and IT Process Analyst</h2>
+            <p class="profile-location">Registro, São Paulo, Brazil</p>
+            <p class="profile-desc" data-i18n="profileDesc">IT Governance and Management Specialist with a background in Business Administration and a focus on Operational Efficiency and GRC (Governance, Risk and Compliance)</p>
+        </section>
+
+        <!-- Key Skills Grid Section -->
+        <section class="info-section">
+            <h3 class="section-title" data-i18n="skillsTitle">Key Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-icon">💼</span>
+                    <span class="skill-text">IT Management</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🛡️</span>
+                    <span class="skill-text">IT Governance</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📋</span>
+                    <span class="skill-text">Project Management</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🧭</span>
+                    <span class="skill-text">Strategic Planning</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🎓</span>
+                    <span class="skill-text">Moodle</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📉</span>
+                    <span class="skill-text">Standardized Work</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">⚙️</span>
+                    <span class="skill-text">Process Optimization</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📈</span>
+                    <span class="skill-text">Financial Risk Management</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🏅</span>
+                    <span class="skill-text">Compliance Management</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">👥</span>
+                    <span class="skill-text">Administrative Support</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🛠️</span>
+                    <span class="skill-text">Technical Support</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">⊞</span>
+                    <span class="skill-text">Microsoft Excel</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="info-section">
+            <h3 class="section-title" data-i18n="experienceTitle">Professional Experience</h3>
+            <div class="horizontal-scroll">
+                <div class="info-card">
+                    <h4>YouTube</h4>
+                    <p class="card-subtitle" data-i18n="ytRole">Multimedia Editor...</p>
+                    <p class="card-duration">April 2023 - October 2025</p>
+                </div>
+                <div class="info-card">
+                    <h4>Betfair</h4>
+                    <p class="card-subtitle" data-i18n="bfRole">Risk Analyst...</p>
+                    <p class="card-duration">March 2021 - December 2021</p>
+                </div>
+                <div class="info-card">
+                    <h4>Unisepe Education</h4>
+                    <p class="card-subtitle" data-i18n="uniRole">Administrative Assi...</p>
+                    <p class="card-duration">July 2016 - September 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="info-section">
+            <h3 class="section-title" data-i18n="educationTitle">Education</h3>
+            <div class="horizontal-scroll">
+                <div class="info-card">
+                    <h4>Core/DIO</h4>
+                    <p class="card-subtitle" data-i18n="dioRole">IT Specialist</p>
+                    <p class="card-duration">October 2021 - Present</p>
+                </div>
+                <div class="info-card">
+                    <h4>Unisepe Educational</h4>
+                    <p class="card-subtitle" data-i18n="postRole">IT Governance and...</p>
+                    <p class="card-duration">July 2017 - December 2018</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Native Navigation Bar -->
+    <nav class="bottom-tab-bar" aria-label="App Navigation">
+        <button class="tab-item active" aria-label="Dashboard">
+            <span class="tab-icon">🏠</span>
+            <span class="tab-text">Dashboard</span>
+        </button>
+        <button class="tab-item" aria-label="Details">
+            <span class="tab-icon">📋</span>
+            <span class="tab-text">Details</span>
+        </button>
+        <button class="tab-item" aria-label="Search">
+            <span class="tab-icon">🔍</span>
+            <span class="tab-text">Search</span>
+        </button>
+        <button class="tab-item" aria-label="Settings">
+            <span class="tab-icon">⚙️</span>
+            <span class="tab-text">Settings</span>
+        </button>
+    </nav>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
